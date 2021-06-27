@@ -1,0 +1,27 @@
+{
+  "name": "adminpacientes-backend",
+  "version": "1.0.0",
+  "description": "backend en mongodn y express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lguerrero01/AdminPacientes-Backend.git"
+  },
+  "author": "luis guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lguerrero01/AdminPacientes-Backend/issues"
+  },
+  "homepage": "https://github.com/lguerrero01/AdminPacientes-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.15",
+    "save-dev": "0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
