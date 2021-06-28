@@ -2,17 +2,20 @@ const express = require('express');
 const mongoose = require('mongoose');
 // const bodyParser = require('body-Parser')
 const routes = require('./routes');
+// const cors = require('cors');
 
 //configurar servidor 
 const app = express();
 
 //conectar a mongo db
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/veterinaria', {
+mongoose.connect('mongodb://localhost/veterinaria', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
 });
+
+// app.use(cors());
 
 //habilitar bodyParser pero como esta deprecado  usamos express, extrae la peticion que se envia al servidor
 app.use(express.json());

@@ -1,7 +1,7 @@
 {
   "name": "adminpacientes-backend",
   "version": "1.0.0",
-  "description": "backend en mongodn y express",
+  "description": "backend en mongoDB y express",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

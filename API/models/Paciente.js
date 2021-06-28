@@ -1,29 +1,32 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
-//definir el modelo
-const pacientesSchema = new Schema ({
-    nombre:{
+const pacientesSchema = new Schema({
+    nombre: {
+        type: String,
+        trim: true,
+    },
+    propietario: {
         type: String,
         trim: true
     },
-    propietario:{
+    fecha: {
         type: String,
         trim: true
     },
-    fecha:{
+    telefono: {
+        type: String,
+        trim: true
+    },
+    hora: {
+        type: String,
+        trim: true
+    },
+    sintomas: {
         type: String,
         trim: true
     }
-    ,
-    hora:{
-        type: String,
-        trim: true
-    },
-    sintomas:{
-        type: String,
-        trim: true
-    }
-})
+});
 
-module.exports = mongoose.model('Pacientes', pacientesSchema)
+
+module.exports  = mongoose.model('Paciente', pacientesSchema);
